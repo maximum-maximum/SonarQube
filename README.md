@@ -21,12 +21,18 @@ $ docker run \
 -e SONAR_HOST_URL="http://localhost:9000" \
 -v ${PWD}:/usr/src \
 sonarsource/sonar-scanner-cli \
--Dsonar.projectKey=${PROJECT_NAME} \
+-Dsonar.projectKey=${PROJECT_KEY} \
 -Dsonar.sonar.projectName=${PROJECT_NAME} \
 -Dsonar.sonar.projectVersion=1.0 \
 -Dsonar.sonar.sourceEncoding=UTF-8 \
 -Dsonar.sonar.host.url=http://localhost:9000 \
 -Dsonar.login=${PROJECT_TOKEN}
+```
+
+In the local SonarScanner, instead of using the `docker run`
+
+```zsh
+$ sonar-scanner -Dsonar.source=./ -Dsonar.projectKey=${PROJECT_KEY} -Dsonar.projectname=${PROJECT_NAME} -Dsonar.login=${PROJECT_TOKEN}
 ```
 
 ## Link
