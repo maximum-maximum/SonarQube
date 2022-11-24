@@ -1,5 +1,7 @@
 # SonarQube
 
+## Demo
+
 Launching the SonarQube environment:
 
 ```zsh
@@ -26,3 +28,8 @@ sonarsource/sonar-scanner-cli \
 -Dsonar.sonar.host.url=http://localhost:9000 \
 -Dsonar.login=${PROJECT_TOKEN}
 ```
+
+## Link
+
+- Official: <https://www.sonarqube.org/>
+- Official Github: <https://github.com/SonarSource/sonarqube>
