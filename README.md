@@ -12,7 +12,7 @@ Setup and analysis of SonarScanner:
 
 ```zsh
 $ cd <TARGET_DIRECTORY>
-$ "PROJECT_NAME"=<PROJECT_NAME> "PROJECT_TOKEN"=<PROJECT_TOKEN>
+$ PROJECT_NAME=<PROJECT_NAME> PROJECT_TOKEN=<PROJECT_TOKEN>
 $ docker run \
 --rm \
 --net host \
