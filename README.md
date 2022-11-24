@@ -1,14 +1,18 @@
 # SonarQube
 
+Launching the SonarQube environment:
+
 ```zsh
 $ git clone https://github.com/maximum-maximum/SonarQube.git
 $ cd SonarQube
 $ docker-compose up -d
 ```
 
+Setup and analysis of SonarScanner:
+
 ```zsh
 $ cd <TARGET_DIRECTORY>
-$ export "PROJECT_NAME"=<PROJECT_NAME> "PROJECT_TOKEN"=<PROJECT_TOKEN>
+$ "PROJECT_NAME"=<PROJECT_NAME> "PROJECT_TOKEN"=<PROJECT_TOKEN>
 $ docker run \
 --rm \
 --net host \
